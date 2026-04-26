@@ -86,7 +86,8 @@ EC2_AVAIL_ZONE=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.16
 
 echo "<h1>Hostname: $(hostname -f)</h1>" > /var/www/html/index.html
 echo "<h1>Instance ID: $INSTANCE_ID</h1>" >> /var/www/html/index.html
-echo "<h1>AZ: $EC2_AVAIL_ZONE</h1>" >> /var/www/html/index.html```
+echo "<h1>AZ: $EC2_AVAIL_ZONE</h1>" >> /var/www/html/index.html
+```
 
 ## Load Balancing Validation
 
@@ -100,7 +101,9 @@ Refreshing the ALB DNS endpoint returns responses from different instances and A
 ## Auto Scaling (Scale-Out Test)
 
 Stress command used:
+```bash
 stress-ng --cpu 4 --cpu-load 90 --timeout 300s
+```
 
 
 ![Stress](screenshots/9-1-1-stress-command-a.png)  
