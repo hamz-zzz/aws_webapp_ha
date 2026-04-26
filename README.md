@@ -48,6 +48,14 @@ Outbound internet access for instances is handled via a Regional NAT Gateway.
 
 ---
 
+## Outbound Internet Access
+
+![NAT Gateway](screenshots/4-1-nat-gateway.png)
+
+Private application instances access the internet via the Regional NAT Gateway for package installation and updates.
+
+---
+
 ## Deployment Steps
 
 1. Created VPC (10.0.0.0/16) with DNS enabled  
@@ -142,16 +150,6 @@ After manually terminating an instance, the Auto Scaling Group detected the fail
 
 The system returned to a stable state with the desired number of healthy instances.
 
----
-
-## Outbound Internet Access
-
-![NAT Gateway](screenshots/4-1-nat-gateway.png)
-
-Private application instances access the internet via the Regional NAT Gateway for package installation and updates.
-
----
-
 ## What This Project Demonstrates
 
 - High availability design using Multi-AZ deployment  
@@ -161,7 +159,7 @@ Private application instances access the internet via the Regional NAT Gateway f
 - Self-healing infrastructure (automatic instance replacement)  
 - Private subnet architecture with controlled outbound access via NAT  
 - Security group-based access control and tier isolation  
-- EC2 automation using user data scripts with IMDSv2  
+- EC2 automation using user data scripts  
 
 ---
 
