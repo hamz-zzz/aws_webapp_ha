@@ -1,4 +1,4 @@
-# aws-ha-webapp-alb-autoscaling
+# AWS High Availability Web App with Auto Scaling
 
 ## Architecture Diagram
 
