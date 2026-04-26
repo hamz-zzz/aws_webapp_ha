@@ -38,6 +38,10 @@ Outbound internet access for instances is handled via a Regional NAT Gateway.
   - Minimum Capacity: 2  
   - Maximum Capacity: 3  
 
+  - Target Tracking Policy (CPU-based scaling ~50%)
+
+  ![ASG Target Tracking Policy](screenshots/7-4-3-asg-target-tracking-policy.png) 
+
 - **Load Balancing**
   - Application Load Balancer: **WebApp-TG** *(named incorrectly; intended WebApp-ALB)*  
   - Target Group: **WebApp-TG**  
