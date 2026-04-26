@@ -86,7 +86,7 @@ EC2_AVAIL_ZONE=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.16
 
 echo "<h1>Hostname: $(hostname -f)</h1>" > /var/www/html/index.html
 echo "<h1>Instance ID: $INSTANCE_ID</h1>" >> /var/www/html/index.html
-echo "<h1>AZ: $EC2_AVAIL_ZONE</h1>" >> /var/www/html/index.html
+echo "<h1>AZ: $EC2_AVAIL_ZONE</h1>" >> /var/www/html/index.html```
 
 ## Load Balancing Validation
 
