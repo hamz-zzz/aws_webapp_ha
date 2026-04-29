@@ -4,9 +4,7 @@
 
 ![Architecture](architecture/ha-webapp-architecture.svg)
 
-This project implements a highly available web application architecture in AWS using an Application Load Balancer and Auto Scaling Group.  
-Traffic enters through an internet-facing ALB, is distributed across EC2 instances in private subnets, and scales dynamically based on CPU utilization.  
-Outbound internet access for instances is handled via a Regional NAT Gateway.
+This project implements a highly available web application architecture in AWS using an Application Load Balancer and Auto Scaling Group. Traffic enters through an internet-facing ALB, is distributed across EC2 instances in private subnets, and scales dynamically based on CPU utilization. Outbound internet access for instances is handled via a Regional NAT Gateway.
 
 ---
 
